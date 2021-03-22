@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textViewTitleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/nome_usuario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="407dp"
+        android:layout_height="321dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitleImage"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitleImage"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleImage">
+
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="0dp"
+            android:layout_height="260dp"
+            android:layout_weight="1"
+            android:insetLeft="0dp"
+            android:insetTop="100dp"
+            android:onClick="swapImage"
+            app:icon="@android:drawable/ic_media_rew"
+            app:iconPadding="12dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bob"
+            tools:srcCompat="@drawable/bob"
+            android:contentDescription="@string/imagen" />
+
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="0dp"
+            android:layout_height="260dp"
+            android:layout_weight="1"
+            android:insetTop="100dp"
+            android:onClick="swapImage"
+            app:icon="@android:drawable/ic_media_ff"
+            app:iconPadding="12dp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/indexImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="sans-serif"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/tableRow"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/tableRow"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

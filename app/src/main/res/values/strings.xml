@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TwoActivity</string>
+    <string name="acessarTextView">Acessar</string>
+    <string name="input_insira_seu_email">seuemail@dominio.com</string>
+    <string name="acessar_button_text">Acessar</string>
+    <string name="input_senha_text">Senha</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="usuario_ou_senha_incorreto">Usuário e/ou senha incorreto(s)</string>
+    <string name="nome_usuario">Nome usuario</string>
+    <string name="logout">sair</string>
+    <string name="imagen">imagem</string>
+</resources>
